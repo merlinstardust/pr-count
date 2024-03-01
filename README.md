@@ -1,3 +1,5 @@
+# Pull Request Count
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -14,23 +16,28 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## API
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To call the API directly, go to [http://localhost:3000/api/pull-rewuests?owner=lodash&repo=lodash]([http://localhost:3000](http://localhost:3000/api/pull-rewuests?owner=lodash&repo=lodash))
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This will show you the number of pull requests for the lodash repo.
 
-## Learn More
+Parameters are:
+- owner
+  - required
+  - the username or org that owns the repo
+- repo
+  - the repository you wish to count pull requests for
+- state
+  - optional, defaults to `all`
+  - options are `all`', `open`, `closed`
 
-To learn more about Next.js, take a look at the following resources:
+To see the pull requests for any repo, change owner to the owner of a repo and change repo to the name of the repo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## GUI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Alternatively, you can use the GUI on the main page.
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To use the GUI, type in the owner and repo with a slash `/` in between (eg `owner/repo`) and change the state by clicking any of the buttons
