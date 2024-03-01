@@ -18,7 +18,7 @@ bun dev
 
 ## API
 
-To call the API directly, go to [http://localhost:3000/api/pull-rewuests?owner=lodash&repo=lodash]([http://localhost:3000](http://localhost:3000/api/pull-rewuests?owner=lodash&repo=lodash))
+To call the API directly, go to [http://localhost:3000/api/pull-requests?owner=lodash&repo=lodash](http://localhost:3000/api/pull-requests?owner=lodash&repo=lodash)
 
 This will show you the number of pull requests for the lodash repo.
 
